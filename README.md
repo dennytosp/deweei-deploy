@@ -1,2 +1,2 @@
 # AD-SNEAKER
-### My website: https://adsneaker.herokuapp.com/
+### My website: https://adsneaker.herokuapp.com
