@@ -37,7 +37,7 @@ const SignUpScreen = ({navigation}) => {
 
   // -- fetch -- //
   useEffect(() => {
-    fetch('http://polyshoes.herokuapp.com/api/client-send')
+    fetch('http://adsneaker.herokuapp.com/api/client-send')
       .then((res) => res.json())
       .then((json) => setDataUsers(json))
       .catch((err) => console.log(err));

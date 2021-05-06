@@ -42,7 +42,7 @@ const HomeScreen = ({navigation}) => {
         onPress={() => navigation.navigate('DetailsScreen', {item})}>
         <ImageBackground
           style={style.cardImage}
-          source={{uri: 'http://polyshoes.herokuapp.com/assets/images/' + item.image}}>
+          source={{uri: 'http://adsneaker.herokuapp.com/assets/images/' + item.image}}>
           <Text
             style={{
               color: COLORS.white,
@@ -79,7 +79,7 @@ const HomeScreen = ({navigation}) => {
 
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch('http://polyshoes.herokuapp.com/api/product')
+    fetch('http://adsneaker.herokuapp.com/api/product')
       .then((response) => response.json())
       .then((json) => setData(json))
       .catch((error) => console.error('>>>>>>>', error));
@@ -89,7 +89,7 @@ const HomeScreen = ({navigation}) => {
     return (
       <ImageBackground
         style={style.rmCardImage}
-        source={{uri: 'http://polyshoes.herokuapp.com/assets/images/' + item.image}}>
+        source={{uri: 'http://adsneaker.herokuapp.com/assets/images/' + item.image}}>
         <Text
           style={{
             color: COLORS.white,

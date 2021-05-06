@@ -14,7 +14,7 @@ import Share from 'react-native-share';
 
 const DetailsScreen = ({navigation, route}) => {
   const {item: place} = route.params;
-  const getUrl = 'http://polyshoes.herokuapp.com/assets/images/';
+  const getUrl = 'http://adsneaker.herokuapp.com/assets/images/';
   const myCustomShare = async () => {
     const shareOptions = {
       // subject: 'Category: ' + place.idType.nameCategory,
@@ -41,7 +41,7 @@ const DetailsScreen = ({navigation, route}) => {
       <StatusBar translucent backgroundColor="rgba(0,0,0,0)" />
       <ImageBackground
         style={{flex: 0.7}}
-        source={{uri: 'http://polyshoes.herokuapp.com/assets/images/' + place.image}}>
+        source={{uri: 'http://adsneaker.herokuapp.com/assets/images/' + place.image}}>
         <View style={style.header}>
           <TouchableOpacity>
             <Icon
