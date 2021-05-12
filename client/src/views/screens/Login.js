@@ -27,7 +27,7 @@ const SignInScreen = ({navigation}) => {
   // -- fetch -- //
 
   useEffect(() => {
-    fetch('http://adsneaker.herokuapp.com/api/client-send')
+    fetch('http://deweei.herokuapp.com/api/client-send')
       .then((res) => res.json())
       .then((json) => setDataUsers(json))
       .catch((err) => console.log(err));
